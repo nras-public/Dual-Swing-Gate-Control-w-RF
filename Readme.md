@@ -8,10 +8,10 @@ This project implements a dual-swing gate control system using a radio-frequency
 - RF remote activation using a receiver module
 - Gate movement with configurable open/close timing
 - Limit switch support for each gate
-- Obstacle detection via IR or safety sensor input
+- Emergency stop activation and fault detection
 - Manual push-button control
 - Real-time status reporting over serial monitor
-- Optional safety and lock logic for gate positioning
+- Adjustable safety and lock logic for gate positioning
 
 ## Hardware
 
@@ -24,3 +24,5 @@ The project is built around an ESP32-compatible microcontroller and includes:
 - Obstacle detection sensor(s)
 - Manual control buttons or switches
 - Power supply and wiring as required by the motor driver
+
+- I used an arduino nano, 2 BTS7960 drivers, LCD I2C, qaichip rf receiver, 12v30Ah battery, solar charger.. etc. I'll specify further later.
