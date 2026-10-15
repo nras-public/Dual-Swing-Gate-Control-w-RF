@@ -1,55 +1,26 @@
-# Dual Swing Gate Control w/RF
+# Dual Swing Gate Control w/ RF
 
-This project is a basic dual swing gate control system with RF remote support. It is intended to provide a simple starting point for controlling two gate panels, including open, close, stop, and remote-triggered operation.
+This project implements a dual-swing gate control system using a radio-frequency (RF) remote and ESP32/Arduino-compatible hardware. It is designed to automate a pair of swing gates with limit-switch feedback, obstacle detection, manual override, and RF control.
 
 ## Features
 
-- Dual swing gate control
-- RF receiver support
-- Open, close, and stop actions
-- Simple controller logic for gate movement
-- Easy to customize for your hardware setup
+- Dual gate control for left and right gates
+- RF remote activation using a receiver module
+- Gate movement with configurable open/close timing
+- Limit switch support for each gate
+- Obstacle detection via IR or safety sensor input
+- Manual push-button control
+- Real-time status reporting over serial monitor
+- Optional safety and lock logic for gate positioning
 
 ## Hardware
 
-Typical components used in this type of project include:
+The project is built around an ESP32-compatible microcontroller and includes:
 
-- Microcontroller board
+- ESP32 dev board
 - RF receiver module
-- Relay or motor driver board
-- Gate motors
-- Power supply
-- Limit switches or safety inputs
-- Control buttons and status LEDs
-
-## Project Structure
-
-- Firmware code for the controller logic
-- RF command handling
-- Gate movement and safety logic
-- Wiring and configuration details
-
-## Setup
-
-1. Open the project in your preferred IDE.
-2. Review and update the pin configuration for your hardware.
-3. Connect the controller, motor driver, RF receiver, and safety inputs.
-4. Compile and upload the firmware to the board.
-5. Test the system with the RF remote and manual controls.
-
-## Usage
-
-- Use the RF remote to open or close the gate.
-- Use the stop function to halt motion during operation.
-- Check all safety inputs before normal operation.
-- Ensure the gate is in a safe operating state before enabling automatic motion.
-
-## Notes
-
-- Verify all wiring and motor ratings before powering the system.
-- Add appropriate safety devices and end stops when installing in a real gate setup.
-- Use this as a starting point and adjust timings, logic, and pin mappings for your exact hardware.
-
-## License
-
-This project is provided as-is for educational and personal use. Add a license if you want to distribute it publicly.
+- Gate actuator relay board
+- Limit switches (open/close for each gate)
+- Obstacle detection sensor(s)
+- Manual control buttons or switches
+- Power supply and wiring as required by the motor driver
